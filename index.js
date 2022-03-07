@@ -38,7 +38,7 @@ app.get('/daos', (req, res) => {
   res.send(response.data)
 })
 
-app.listen(port, () => {
+app.listen(process.env.PORT || port, () => {
   console.log(`Example app listening on port ${port}`)
 })
 
